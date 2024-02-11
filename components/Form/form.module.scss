@@ -1,0 +1,40 @@
+@import "../../constants/constans.scss";
+
+.wrapper {
+  box-sizing: border-box;
+  background-color: seagreen;
+  flex: 1;
+
+  &-inner {
+    background-color: $white;
+    width: 544px;
+    padding: 64px;
+    border-radius: 16px;
+    border: 1px solid $dark-olive-green;
+    box-sizing: border-box;
+    margin: 64px auto;
+  }
+}
+
+.form-wrapper {
+  input {
+    margin-top: 64px;
+    height: 64px;
+    width: calc(100% - 64px);
+    padding-left: 60px;
+    border-radius: 8px;
+    border: 1px solid $dark-olive-green;
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
+    background-color: $light-blue;
+    height: 64px;
+    width: 100%;
+    margin-top: 16px;
+    color: $white;
+    border-radius: 8px;
+    border: 1px solid $dark-olive-green;
+  }
+}

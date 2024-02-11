@@ -10,11 +10,12 @@
 .main_wrapper {
   max-width: 1920px;
   background-color: $light-yellow;
+  margin: 0 auto;
 
-  @media screen and (max-width: 600px) {
-    max-width: 350px;
-    min-width: 350px;
-  }
+  // @media screen and (max-width: 600px) {
+  //   max-width: 350px;
+  //   min-width: 350px;
+  // }
 }
 
 .main_inner {

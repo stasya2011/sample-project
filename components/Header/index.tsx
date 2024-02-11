@@ -1,12 +1,12 @@
-import Link from "next/link";
 import Image from "next/image";
+import Navigation from "./Navigation";
 import styles from "./header.module.scss";
 
 const Header = () => {
   return (
     <header className={styles.wrapper}>
       <div className={styles["inner-wrapper"]}>
-        <div>
+        <h1>
           <Image
             src={"/assets/logo.svg"}
             alt={"Logo"}
@@ -14,12 +14,8 @@ const Header = () => {
             height={32}
             priority
           />
-        </div>
-        <nav className={styles.nav}>
-          <Link href={"/chrome-extension"}>Chrome Extension</Link>
-          <Link href={"/price-comparison"}>Price Comparison</Link>
-          <Link href={"/blog"}>Blog</Link>
-        </nav>
+        </h1>
+        <Navigation />
       </div>
     </header>
   );

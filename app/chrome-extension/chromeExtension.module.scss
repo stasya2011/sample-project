@@ -2,54 +2,8 @@
 
 .wrapper {
   display: flex;
-}
 
-.form {
-  background-color: salmon;
-  flex: 1;
-}
-
-.steps {
-  background-color: seagreen;
-  flex: 1;
-  margin: 0 auto;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 100px;
-  margin: 128px 100px;
-
-  &-item {
-    display: flex;
-
-    &_img {
-      width: 140px;
-      margin-right: 55px;
-    }
-
-    &_info {
-      width: 256px;
-    }
-
-    &_text {
-      font-size: 20px;
-      color: $dark-olive-green;
-      font-family: "Noto Sans";
-    }
-  }
-}
-
-.title {
-  font-family: "Caveat Brush";
-  font-size: 32px;
-  padding: 16px 0;
-
-  &-steps {
-    font-size: 20px;
-    color: $light-blue;
-    font-family: "Noto Sans";
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
   }
 }
