@@ -1,11 +1,11 @@
-"use client";
-import { useMediaQuery } from "@uidotdev/usehooks";
+//"use client";
+//import { useMediaQuery } from "@uidotdev/usehooks";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../header.module.scss";
 
 const Navigation = () => {
-  const isSmallDevice = useMediaQuery("only screen and (max-width : 600px)");
+  const isSmallDevice = true;
   return (
     <>
       {isSmallDevice ? (

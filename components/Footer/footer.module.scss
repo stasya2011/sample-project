@@ -1,6 +1,22 @@
 @import "../../constants/constans.scss";
 
-.wrapper {
+.inner-wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+  border: 1px solid red;
+  height: 100%;
+}
+
+.top {
   background-color: $dark-gray;
   height: 144px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.bottom {
+  height: 348px;
+  background-color: $light-pink;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }

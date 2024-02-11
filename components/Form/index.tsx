@@ -14,6 +14,9 @@ const Form = () => {
           <input type="email" placeholder="Enter your email address" />
           <button className={styles.btn}>Get Referral Link</button>
         </form>
+        <span className={styles["clarification"]}>
+          Limits on max rewards apply.
+        </span>
       </div>
     </section>
   );

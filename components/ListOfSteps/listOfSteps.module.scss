@@ -3,16 +3,16 @@
 .steps {
   flex: 1;
   margin: 0 auto;
+  background-color: salmon;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-end;
   gap: 100px;
   margin-top: 128px;
   margin-bottom: 128px;
-  align-items: center;
 
   &-item {
     display: flex;

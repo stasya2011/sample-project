@@ -2,7 +2,7 @@
 
 .wrapper {
   box-sizing: border-box;
-  background-color: seagreen;
+  background-color: green;
   flex: 1;
 
   &-inner {
@@ -12,7 +12,13 @@
     border-radius: 16px;
     border: 1px solid $dark-olive-green;
     box-sizing: border-box;
-    margin: 64px auto;
+    margin: 64px 0px;
+
+    @media screen and (max-width: 600px) {
+      width: 340px;
+      padding: 16px;
+      margin: 32px auto;
+    }
   }
 }
 
@@ -25,6 +31,11 @@
     border-radius: 8px;
     border: 1px solid $dark-olive-green;
     font-size: 20px;
+
+    @media screen and (max-width: 600px) {
+      padding-left: 16px;
+      width: calc(100% - 16px);
+    }
   }
 
   .btn {
@@ -36,5 +47,13 @@
     color: $white;
     border-radius: 8px;
     border: 1px solid $dark-olive-green;
+    margin-bottom: 150px;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 71px;
+    }
   }
+}
+.clarification {
+  color: $greyish-blue;
 }
