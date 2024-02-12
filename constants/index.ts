@@ -37,3 +37,11 @@ export const dataFooterBtns: IFooterBtn[] = [
     id: "222",
   },
 ];
+
+export const quickLinks = [
+  { name: "Price Comparison", link: "", id: "444" },
+  { name: "Chrome Extension", link: "", id: "4445" },
+  { name: "How It Works", link: "", id: "6666" },
+  { name: "Ratepunk Blog", link: "", id: "7777" },
+  { name: "Privacy Policy", link: "", id: "8888" },
+];
