@@ -1,8 +1,10 @@
 import { dataFooterBtns, quickLinks } from "@/constants";
-import { IFooterBtn } from "@/types";
+import { IFooterBtn, IMenu } from "@/types";
 import Button from "../Button";
 import RateComponent from "./RateComponent";
-import Logo from "../Header/Logo";
+import Logo from "../header/logo";
+import Link from "next/link";
+import Image from "next/image";
 import classNames from "classnames";
 import styles from "./footer.module.scss";
 
@@ -47,19 +49,32 @@ const Footer = () => {
             </div>
           </div>
           <div className={classNames(styles["bottom_item"])}>
-            <h3>QUICK LINKS</h3>
-            <ul>
-              {quickLinks.map((link) => (
-                <li key={link.id}>{link.name}</li>
+            <h3 className={styles.title}>QUICK LINKS</h3>
+            <ul className={styles.list}>
+              {quickLinks.map((link: IMenu) => (
+                <li key={link.id}>
+                  <Link href={link.href}>{link.name}</Link>
+                </li>
               ))}
             </ul>
           </div>
           <div className={classNames(styles["bottom_item"])}>
             <div>
-              <h3>CONTACT</h3>
+              <h3 className={styles.title}>CONTACT</h3>
+              <div>
+                <Image
+                  src={"/assets/email.svg"}
+                  alt={"email"}
+                  width={16}
+                  height={12.5}
+                  style={{ marginRight: 16 }}
+                />
+                hi@ratepunk.com
+              </div>
             </div>
             <div className={styles["bottom_title"]}>
-              <h3>SOCIAL</h3>
+              <h3 className={styles.title}>SOCIAL</h3>
+              <div>text....</div>
             </div>
           </div>
           {/* <div>© 2021 Ratepunk. All Rights Reserved.</div> */}

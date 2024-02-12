@@ -11,3 +11,9 @@ export interface IFooterBtn {
   srcToImg: string;
   id: string;
 }
+
+export interface IMenu {
+  name: string;
+  id: string;
+  href: string;
+}

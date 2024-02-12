@@ -1,10 +1,12 @@
-//FIXME import { useMediaQuery } from "@uidotdev/usehooks";
+//"use client";
+//import { useMediaQuery } from "@uidotdev/usehooks";
+import { useEffect } from "react";
 import Image from "next/image";
 import styles from "../header.module.scss";
-import NavBlock from "./NavBlock";
+import NavBlock from "./navBlock";
 
 const Navigation = () => {
-  // FIXME
+  // FIXME Need to create custom hook
   //const isSmallDevice = useMediaQuery("only screen and (max-width : 600px)");
   const isSmallDevice = false;
 

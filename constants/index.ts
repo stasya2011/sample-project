@@ -1,4 +1,4 @@
-import { IFooterBtn, IStep } from "@/types";
+import { IFooterBtn, IMenu, IStep } from "@/types";
 
 export const data: IStep[] = [
   {
@@ -38,10 +38,28 @@ export const dataFooterBtns: IFooterBtn[] = [
   },
 ];
 
-export const quickLinks = [
-  { name: "Price Comparison", link: "", id: "444" },
-  { name: "Chrome Extension", link: "", id: "4445" },
-  { name: "How It Works", link: "", id: "6666" },
-  { name: "Ratepunk Blog", link: "", id: "7777" },
-  { name: "Privacy Policy", link: "", id: "8888" },
+export const quickLinks: IMenu[] = [
+  { name: "Price Comparison", href: "/price-comparison", id: "444" },
+  { name: "Chrome Extension", href: "/chrome-extension", id: "4445" },
+  { name: "How It Works", href: "/", id: "6666" },
+  { name: "Ratepunk Blog", href: "/blog", id: "7777" },
+  { name: "Privacy Policy", href: "/", id: "8888" },
+];
+
+export const menu: IMenu[] = [
+  {
+    href: "/chrome-extension",
+    name: "Chrome Extension",
+    id: "",
+  },
+  {
+    href: "/price-comparison",
+    name: "Price Comparison",
+    id: "",
+  },
+  {
+    href: "/blog",
+    name: "Blog",
+    id: "",
+  },
 ];
