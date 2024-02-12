@@ -1,0 +1,11 @@
+@import "../../../constants/constans.scss";
+
+.rate {
+  color: $white;
+  font-family: "Noto Sans";
+
+  li[class*="ant-rate-star ant-rate-star-zero"]
+    div[class*="ant-rate-star-second"] {
+    color: $white;
+  }
+}

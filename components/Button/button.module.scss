@@ -1,0 +1,40 @@
+@import "../../constants/constans.scss";
+
+.wrapper {
+  border: 1px solid $dark-olive-green;
+  border-radius: 8px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 310px;
+  margin-right: 16px;
+  font-family: "Gadugi";
+
+  img {
+    margin-left: 25px;
+    margin-right: 20px;
+  }
+  span {
+    &:nth-of-type(2n + 1) {
+      text-decoration: none;
+      color: $white;
+      font-size: 16px;
+      font-family: "Noto Sans";
+    }
+    &:nth-of-type(2n) {
+      text-decoration: none;
+      color: $light-pink;
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}

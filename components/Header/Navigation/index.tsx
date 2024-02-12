@@ -1,11 +1,13 @@
-//"use client";
-//import { useMediaQuery } from "@uidotdev/usehooks";
+//FIXME import { useMediaQuery } from "@uidotdev/usehooks";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "../header.module.scss";
+import NavBlock from "./NavBlock";
 
 const Navigation = () => {
-  const isSmallDevice = true;
+  // FIXME
+  //const isSmallDevice = useMediaQuery("only screen and (max-width : 600px)");
+  const isSmallDevice = false;
+
   return (
     <>
       {isSmallDevice ? (
@@ -17,11 +19,7 @@ const Navigation = () => {
           className={styles["menu-mobile"]}
         />
       ) : (
-        <nav className={styles.nav}>
-          <Link href={"/chrome-extension"}>Chrome Extension</Link>
-          <Link href={"/price-comparison"}>Price Comparison</Link>
-          <Link href={"/blog"}>Blog</Link>
-        </nav>
+        <NavBlock />
       )}
     </>
   );

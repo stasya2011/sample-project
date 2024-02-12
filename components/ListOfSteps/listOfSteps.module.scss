@@ -22,6 +22,12 @@
       margin-right: 55px;
     }
 
+    &_img-revert {
+      width: 140px;
+      margin-right: 0px;
+      margin-left: 55px;
+    }
+
     &_info {
       width: 256px;
     }
@@ -36,6 +42,7 @@
   @media screen and (max-width: 600px) {
     margin: 40px 0px 0px 0px;
     gap: 0;
+    align-items: center;
 
     .list-item {
       flex-direction: column;

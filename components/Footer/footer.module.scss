@@ -1,10 +1,17 @@
 @import "../../constants/constans.scss";
-
 .inner-wrapper {
   max-width: 1150px;
   margin: 0 auto;
-  border: 1px solid red;
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.inner-wrapper-top {
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 32px 0 32px;
+  }
 }
 
 .top {
@@ -12,6 +19,14 @@
   height: 144px;
   padding-bottom: 10px;
   box-sizing: border-box;
+
+  @media screen and (max-width: 600px) {
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .bottom {
@@ -19,4 +34,12 @@
   background-color: $light-pink;
   padding-bottom: 10px;
   box-sizing: border-box;
+}
+
+.btns {
+  display: flex;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }

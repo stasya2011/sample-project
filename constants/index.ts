@@ -1,4 +1,4 @@
-import { IStep } from "@/types";
+import { IFooterBtn, IStep } from "@/types";
 
 export const data: IStep[] = [
   {
@@ -20,5 +20,20 @@ export const data: IStep[] = [
       "Redeem for a $20 hotel booking voucher once you collect 20 coins.",
     linkToImg: "/assets/voucher.svg",
     id: "3",
+  },
+];
+
+export const dataFooterBtns: IFooterBtn[] = [
+  {
+    link: "",
+    resource: "chrome web store",
+    srcToImg: "/assets/chrome.svg",
+    id: "111",
+  },
+  {
+    link: "",
+    resource: "apple app store",
+    srcToImg: "/assets/apple.svg",
+    id: "222",
   },
 ];
