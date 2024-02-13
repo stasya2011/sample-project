@@ -1,22 +1,21 @@
 @import "../../constants/constans.scss";
 
 .wrapper {
-  box-sizing: border-box;
   flex: 1;
 
   &-inner {
     background-color: $white;
     width: 544px;
     height: 795px;
-    padding: 64px;
+    padding: 62px;
     border-radius: 16px;
     border: 1px solid $dark-olive-green;
+    margin: 62px 0px 0px 0px;
     box-sizing: border-box;
-    margin: 64px 0px 0px 0px;
 
     @media screen and (max-width: 600px) {
       width: 340px;
-      height: 537px;
+      height: 535px;
       padding: 16px;
       margin: 32px auto;
     }
@@ -24,10 +23,12 @@
 }
 
 .form-wrapper {
+  position: relative;
+
   input {
-    margin-top: 64px;
+    margin-top: 62px;
     height: 60px;
-    width: calc(100% - 64px);
+    width: calc(100% - 62px);
     padding-left: 60px;
     border-radius: 8px;
     border: 1px solid $dark-olive-green;
@@ -87,9 +88,14 @@
 }
 
 .text {
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 32px;
   color: $dark-olive-green;
   font-family: "Noto Sans";
+
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
 }
 
 .title {
@@ -99,5 +105,32 @@
 
   @media screen and (max-width: 600px) {
     font-size: 32px;
+    margin-top: 16px;
+  }
+}
+
+.error {
+  color: $pink;
+  font-size: 12px;
+  font-family: "Noto Sans";
+  position: absolute;
+  top: 40px;
+
+  @media screen and (max-width: 600px) {
+    top: 5px;
+  }
+}
+
+.success {
+  position: absolute;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  color: $dark-olive-green;
+  font-family: "Noto Sans";
+  font-weight: 800;
+
+  img {
+    margin-right: 10px;
   }
 }
