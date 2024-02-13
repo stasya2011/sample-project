@@ -7,14 +7,16 @@
   &-inner {
     background-color: $white;
     width: 544px;
+    height: 795px;
     padding: 64px;
     border-radius: 16px;
     border: 1px solid $dark-olive-green;
     box-sizing: border-box;
-    margin: 64px 0px;
+    margin: 64px 0px 0px 0px;
 
     @media screen and (max-width: 600px) {
       width: 340px;
+      height: 537px;
       padding: 16px;
       margin: 32px auto;
     }
@@ -24,7 +26,7 @@
 .form-wrapper {
   input {
     margin-top: 64px;
-    height: 64px;
+    height: 60px;
     width: calc(100% - 64px);
     padding-left: 60px;
     border-radius: 8px;
@@ -32,6 +34,7 @@
     font-size: 20px;
 
     @media screen and (max-width: 600px) {
+      margin-top: 24px;
       padding-left: 16px;
       width: calc(100% - 16px);
     }
@@ -40,7 +43,7 @@
   .btn {
     font-size: 20px;
     background-color: $light-blue;
-    height: 64px;
+    height: 62px;
     width: 100%;
     margin-top: 16px;
     color: $white;
@@ -51,8 +54,50 @@
     @media screen and (max-width: 600px) {
       margin-bottom: 71px;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
+
+.referral-link {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+
+  input {
+    margin-top: 0px;
+    flex: 2;
+    border-radius: 8px 0px 0px 8px;
+    padding-left: 20px;
+  }
+
+  .btn {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    flex: 1;
+    border-radius: 0px 8px 8px 0px;
+    border-left: transparent;
+  }
+}
+
 .clarification {
   color: $greyish-blue;
+}
+
+.text {
+  font-size: 16px;
+  color: $dark-olive-green;
+  font-family: "Noto Sans";
+}
+
+.title {
+  font-family: "Caveat Brush";
+  font-size: 48px;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 32px;
+  }
 }
