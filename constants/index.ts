@@ -1,4 +1,4 @@
-import { IFooterBtn, IMenu, IStep } from "@/types";
+import { IFooterBtn, IMenu, IStep, SoialIcon } from "@/types";
 
 export const data: IStep[] = [
   {
@@ -50,16 +50,39 @@ export const menu: IMenu[] = [
   {
     href: "/chrome-extension",
     name: "Chrome Extension",
-    id: "",
+    id: "111",
   },
   {
     href: "/price-comparison",
     name: "Price Comparison",
-    id: "",
+    id: "222",
   },
   {
     href: "/blog",
     name: "Blog",
-    id: "",
+    id: "333",
+  },
+];
+
+export const socialIcons: SoialIcon[] = [
+  {
+    href: "/assets/instagram.svg",
+    id: "1111",
+  },
+  {
+    href: "/assets/facebook.svg",
+    id: "4222",
+  },
+  {
+    href: "/assets/linkedin.svg",
+    id: "3333",
+  },
+  {
+    href: "/assets/twitter.svg",
+    id: "444",
+  },
+  {
+    href: "/assets/tiktok.svg",
+    id: "555",
   },
 ];

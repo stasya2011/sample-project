@@ -1,7 +1,7 @@
-import { dataFooterBtns, quickLinks } from "@/constants";
-import { IFooterBtn, IMenu } from "@/types";
+import { dataFooterBtns, quickLinks, socialIcons } from "@/constants";
+import { IFooterBtn, IMenu, SoialIcon } from "@/types";
 import Button from "../Button";
-import RateComponent from "./RateComponent";
+import RateComponent from "./rateComponent/rateComponent";
 import Logo from "../header/logo";
 import Link from "next/link";
 import Image from "next/image";
@@ -58,7 +58,12 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className={classNames(styles["bottom_item"])}>
+          <div
+            className={classNames(
+              styles["bottom_item"],
+              styles["bottom_item-flex"]
+            )}
+          >
             <div>
               <h3 className={styles.title}>CONTACT</h3>
               <div>
@@ -72,9 +77,15 @@ const Footer = () => {
                 hi@ratepunk.com
               </div>
             </div>
-            <div className={styles["bottom_title"]}>
+            <div className={styles.text}>
               <h3 className={styles.title}>SOCIAL</h3>
-              <div>text....</div>
+              <div className={styles["social-btns"]}>
+                {socialIcons.map((el: SoialIcon) => (
+                  <div className={styles["social-btn"]} key={el.id}>
+                    <Image src={el.href} width={16} height={16} alt={"icon"} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           {/* <div>© 2021 Ratepunk. All Rights Reserved.</div> */}

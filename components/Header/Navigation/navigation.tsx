@@ -7,7 +7,7 @@ import NavBlock from "./navBlock";
 
 const Navigation = () => {
   // FIXME Need to create custom hook
-  //const isSmallDevice = useMediaQuery("only screen and (max-width : 600px)");
+  //const isSmallDevice = useMediaQuery("only screen and (max-width : 1150px)");
   const isSmallDevice = false;
 
   return (

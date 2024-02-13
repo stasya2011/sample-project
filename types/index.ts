@@ -17,3 +17,5 @@ export interface IMenu {
   id: string;
   href: string;
 }
+
+export type SoialIcon = Omit<IMenu, "name">;
