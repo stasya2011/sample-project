@@ -3,7 +3,7 @@
 .wrapper {
   display: flex;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     flex-direction: column;
   }
 }

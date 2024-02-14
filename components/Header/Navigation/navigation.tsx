@@ -4,9 +4,6 @@ import useIsSmallScreen from "@/hooks/hooks";
 import Image from "next/image";
 import styles from "../header.module.scss";
 import NavBlock from "./navBlock";
-import { useState } from "react";
-import { createPortal } from "react-dom";
-import MobileMenu from "../mobileMenu";
 
 const Navigation = ({
   handleMenu,
@@ -16,7 +13,6 @@ const Navigation = ({
   isMobileMenuOpen: boolean;
 }) => {
   const { isSmallDevice } = useIsSmallScreen();
-  //TODO MobileMenu!!!
   const openMenu = () => {
     handleMenu(true);
   };

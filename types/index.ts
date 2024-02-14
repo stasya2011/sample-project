@@ -18,4 +18,4 @@ export interface IMenu {
   href: string;
 }
 
-export type SoialIcon = Omit<IMenu, "name">;
+export type SocialIcon = Omit<IMenu, "name">;

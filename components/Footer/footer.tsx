@@ -1,5 +1,5 @@
 import { dataFooterBtns, quickLinks, socialIcons } from "@/constants";
-import { IFooterBtn, IMenu, SoialIcon } from "@/types";
+import { IFooterBtn, IMenu, SocialIcon } from "@/types";
 import Button from "../button/button";
 import RateComponent from "./rateComponent/rateComponent";
 import Logo from "../header/logo";
@@ -80,7 +80,7 @@ const Footer = () => {
             <div className={styles.text}>
               <h3 className={styles.title}>SOCIAL</h3>
               <div className={styles["social-btns"]}>
-                {socialIcons.map((el: SoialIcon) => (
+                {socialIcons.map((el: SocialIcon) => (
                   <div className={styles["social-btn"]} key={el.id}>
                     <Image src={el.href} width={16} height={16} alt={"icon"} />
                   </div>

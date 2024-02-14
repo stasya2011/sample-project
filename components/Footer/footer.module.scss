@@ -7,7 +7,7 @@
   display: flex;
   box-sizing: border-box;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     flex-direction: column;
     margin: 0 32px;
   }
@@ -17,7 +17,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1150px) {
       justify-content: start;
       flex-direction: column;
       padding-bottom: 32px;
@@ -41,7 +41,7 @@
   padding-bottom: 10px;
   box-sizing: border-box;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     height: 286px;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@
   font-size: 16px;
   width: 100%;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     height: 867px;
     padding-top: 48px;
   }
@@ -68,7 +68,7 @@
 .btns {
   display: flex;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     flex-direction: column;
   }
 }
@@ -79,12 +79,12 @@
   &-flexElem_2 {
     width: 544px;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1150px) {
       width: auto;
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     margin-bottom: 48px;
   }
 }

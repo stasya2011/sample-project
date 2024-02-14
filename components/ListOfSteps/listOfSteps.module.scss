@@ -40,7 +40,7 @@
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     margin: 40px 0px 0px 0px;
     gap: 0;
     align-items: center;
@@ -78,7 +78,7 @@
     font-family: "Noto Sans";
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     text-align: center;
 
     &-steps {

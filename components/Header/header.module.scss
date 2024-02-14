@@ -13,7 +13,7 @@
   max-width: 1150px;
   margin: 0 auto;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     margin: 0px 20px;
   }
 }
@@ -27,7 +27,7 @@
     font-size: 20px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     display: flex;
     flex-direction: column;
 

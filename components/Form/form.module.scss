@@ -16,7 +16,7 @@
     justify-content: space-between;
     flex-direction: column;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1150px) {
       width: 340px;
       height: 535px;
       padding: 16px;
@@ -37,7 +37,7 @@
     border: 1px solid $dark-olive-green;
     font-size: 20px;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1150px) {
       margin-top: 24px;
       padding-left: 50px;
       width: calc(100% - 50px);
@@ -56,7 +56,7 @@
     border: 1px solid $dark-olive-green;
     margin-bottom: 150px;
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1150px) {
       margin-bottom: 71px;
     }
 
@@ -90,7 +90,7 @@
 .clarification {
   color: $greyish-blue;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     margin-top: -40px;
   }
 }
@@ -101,7 +101,7 @@
   color: $dark-olive-green;
   font-family: "Noto Sans";
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     font-size: 16px;
   }
 }
@@ -111,7 +111,7 @@
   font-size: 48px;
   margin-bottom: 32px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     font-size: 32px;
     margin-top: 16px;
   }
@@ -124,7 +124,7 @@
   position: absolute;
   top: 40px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     top: 5px;
   }
 }
@@ -156,7 +156,7 @@
   top: 85px;
   left: 20px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1150px) {
     top: 45px;
   }
 }
