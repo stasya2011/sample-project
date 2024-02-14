@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer/footer";
+import classNames from "classnames";
 import "./global.scss";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={"main_wrapper"}>
+      <body className={"main_wrapper"} suppressHydrationWarning={true}>
         <Header />
-        <main className={"main_inner"}>{children}</main>
+        <main className={classNames("main_inner", inter.className)}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

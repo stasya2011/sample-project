@@ -68,7 +68,7 @@ const Footer = () => {
               <h3 className={styles.title}>CONTACT</h3>
               <div>
                 <Image
-                  src={"/assets/email.svg"}
+                  src={"/assets/email-footer.svg"}
                   alt={"email"}
                   width={16}
                   height={12.5}

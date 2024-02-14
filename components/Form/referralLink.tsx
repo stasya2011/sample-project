@@ -1,10 +1,21 @@
 import Image from "next/image";
 import classNames from "classnames";
 import styles from "./form.module.scss";
+import { useState } from "react";
 
 const successMessage = { status: "Your email is confirmed!", img: "/assets" };
 
-const ReferralLink = () => {
+const ReferralLink = ({ reflink }: { reflink: string }) => {
+  const [isShowAllert, setIsShowAllert] = useState(false);
+
+  const copyLink = (e: React.MouseEvent) => {
+    e.preventDefault();
+
+    navigator.clipboard.writeText(reflink);
+    setIsShowAllert(true);
+    setTimeout(() => setIsShowAllert(false), 3000);
+  };
+
   return (
     <>
       <form
@@ -19,8 +30,20 @@ const ReferralLink = () => {
           />
           {successMessage.status}
         </div>
-        <input type="email" placeholder="Enter your email address" />
-        <button className={styles.btn}>Copy</button>
+        <input
+          type="text"
+          placeholder="Enter your email address"
+          value={reflink}
+          readOnly
+        />
+        {isShowAllert ? (
+          <h3 className={styles["copied-link"]}>The link is copied</h3>
+        ) : (
+          ""
+        )}
+        <button onClick={copyLink} className={styles.btn}>
+          Copy
+        </button>
       </form>
     </>
   );

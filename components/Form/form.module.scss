@@ -36,8 +36,9 @@
 
     @media screen and (max-width: 600px) {
       margin-top: 24px;
-      padding-left: 16px;
-      width: calc(100% - 16px);
+      padding-left: 50px;
+      width: calc(100% - 50px);
+      font-size: 16px;
     }
   }
 
@@ -85,6 +86,13 @@
 
 .clarification {
   color: $greyish-blue;
+
+  position: absolute;
+  bottom: 0px;
+
+  @media screen and (max-width: 600px) {
+    bottom: 50px;
+  }
 }
 
 .text {
@@ -132,5 +140,23 @@
 
   img {
     margin-right: 10px;
+  }
+}
+
+.copied-link {
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  color: $green;
+  text-shadow: 0px 0px 1px $dark-olive-green;
+}
+
+.email-img {
+  position: absolute;
+  top: 85px;
+  left: 20px;
+
+  @media screen and (max-width: 600px) {
+    top: 45px;
   }
 }
