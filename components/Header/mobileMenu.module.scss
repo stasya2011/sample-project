@@ -1,0 +1,18 @@
+.wrapper {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px;
+  box-sizing: border-box;
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  li {
+    list-style: none;
+    height: 40px;
+  }
+}
