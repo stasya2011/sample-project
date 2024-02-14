@@ -8,26 +8,38 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import MobileMenu from "../mobileMenu";
 
-const Navigation = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const Navigation = ({
+  handleMenu,
+  isMobileMenuOpen,
+}: {
+  handleMenu: (value: boolean) => void;
+  isMobileMenuOpen: boolean;
+}) => {
   const { isSmallDevice } = useIsSmallScreen();
   //TODO MobileMenu!!!
   const openMenu = () => {
-    setIsMobileMenuOpen(true);
+    handleMenu(true);
   };
 
   const closeMenu = () => {
-    setIsMobileMenuOpen(false);
+    handleMenu(false);
   };
   return (
     <>
       {isSmallDevice ? (
         isMobileMenuOpen ? (
-          createPortal(<MobileMenu closeMenu={closeMenu} />, document.body)
+          <Image
+            src={"/assets/close.svg"}
+            alt={"Menu close"}
+            width={19}
+            height={19}
+            className={styles["menu-mobile"]}
+            onClick={closeMenu}
+          />
         ) : (
           <Image
             src={"/assets/menu.svg"}
-            alt={"Menu"}
+            alt={"Menu open."}
             width={19}
             height={19}
             className={styles["menu-mobile"]}

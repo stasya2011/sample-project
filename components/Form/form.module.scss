@@ -12,6 +12,9 @@
     border: 1px solid $dark-olive-green;
     margin: 62px 0px 0px 0px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
     @media screen and (max-width: 600px) {
       width: 340px;
@@ -87,11 +90,8 @@
 .clarification {
   color: $greyish-blue;
 
-  position: absolute;
-  bottom: 0px;
-
   @media screen and (max-width: 600px) {
-    bottom: 50px;
+    margin-top: -40px;
   }
 }
 

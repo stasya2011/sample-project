@@ -21,28 +21,33 @@ const Form = ({ submite }: any) => {
   return (
     <section className={styles.wrapper}>
       <div className={styles["wrapper-inner"]}>
-        <h2 className={styles.title}>REFER FRIENDS AND GET REWARDS</h2>
-        <p className={styles.text}>
-          Refer your friends to us and earn hotel booking vouchers. We`ll give
-          you 1 coin for each friend that installs our extension. Minimum
-          cash-out at 20 coins.
-        </p>
-        {isEmailConfirmed ? (
-          <ReferralLink reflink={"https://ratepunk.com/referral"} />
-        ) : (
-          <form className={styles["form-wrapper"]} action={handleGetLink}>
-            {isError && <h4 className={styles.error}>{errorMessage.status}</h4>}
-            <Image
-              className={styles["email-img"]}
-              alt="email"
-              src={"/assets/email.svg"}
-              width={20}
-              height={16}
-            />
-            <input type="email" placeholder="Enter your email address" />
-            <button className={styles.btn}>Get Referral Link</button>
-          </form>
-        )}
+        <div>
+          <h2 className={styles.title}>REFER FRIENDS AND GET REWARDS</h2>
+          <p className={styles.text}>
+            Refer your friends to us and earn hotel booking vouchers. We`ll give
+            you 1 coin for each friend that installs our extension. Minimum
+            cash-out at 20 coins.
+          </p>
+          {isEmailConfirmed ? (
+            <ReferralLink reflink={"https://ratepunk.com/referral"} />
+          ) : (
+            <form className={styles["form-wrapper"]} action={handleGetLink}>
+              {isError && (
+                <h4 className={styles.error}>{errorMessage.status}</h4>
+              )}
+              <Image
+                className={styles["email-img"]}
+                alt="email"
+                src={"/assets/email.svg"}
+                width={20}
+                height={16}
+              />
+              <input type="email" placeholder="Enter your email address" />
+              <button className={styles.btn}>Get Referral Link</button>
+            </form>
+          )}
+        </div>
+
         <span className={styles["clarification"]}>
           Limits on max rewards apply.
         </span>
