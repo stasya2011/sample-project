@@ -21,9 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={"main_wrapper"} suppressHydrationWarning={true}>
         <Header />
-        <main className={classNames("main_inner", inter.className)}>
-          {children}
-        </main>
+        <main className={classNames("main_inner")}>{children}</main>
         <Footer />
       </body>
     </html>

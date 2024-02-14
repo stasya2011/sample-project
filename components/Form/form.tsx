@@ -11,7 +11,6 @@ const Form = ({ submite }: any) => {
   const [isEmailConfirmed, setIsEmailConfirmed] = useState(false);
   const handleGetLink = async () => {
     const res = await submite();
-    console.log(res);
     if (res && res.email) {
       setIsEmailConfirmed(true);
     } else {
