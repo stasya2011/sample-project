@@ -22,11 +22,9 @@ const ChromeExtension = () => {
   }
 
   return (
-    <section>
-      <div className={styles.wrapper}>
-        <Form submite={submite} />
-        <ListOfSteps />
-      </div>
+    <section className={styles.wrapper}>
+      <Form submite={submite} />
+      <ListOfSteps />
     </section>
   );
 };

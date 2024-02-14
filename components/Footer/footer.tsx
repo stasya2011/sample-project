@@ -70,9 +70,9 @@ const Footer = () => {
                 <Image
                   src={"/assets/email-footer.svg"}
                   alt={"email"}
-                  width={16}
-                  height={12.5}
-                  style={{ marginRight: 16 }}
+                  width={0}
+                  height={0}
+                  style={{ marginRight: 16, width: 16, height: "auto" }}
                 />
                 hi@ratepunk.com
               </div>

@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "@types/antd": "^1.0.0",
-    "@uidotdev/usehooks": "^2.4.1",
     "antd": "^5.14.0",
     "classnames": "^2.5.1",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-responsive": "^9.0.2",
     "sass": "^1.70.0"
   },
   "devDependencies": {

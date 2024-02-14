@@ -18,8 +18,8 @@ const ListOfSteps = () => {
               <Image
                 src={step.linkToImg}
                 alt={step.name}
-                width={128}
-                height={140}
+                width={0}
+                height={0}
                 className={styles["list-item_img-revert"]}
               />
             </li>
@@ -28,8 +28,8 @@ const ListOfSteps = () => {
               <Image
                 src={step.linkToImg}
                 alt={step.name}
-                width={128}
-                height={140}
+                width={0}
+                height={0}
                 className={styles["list-item_img"]}
               />
               <div className={styles["list-item_info"]}>
