@@ -5,11 +5,7 @@ import Navigation from "./navigation/navigation";
 import styles from "./header.module.scss";
 import Logo from "./logo";
 import NavBlock from "./navigation/navBlock";
-// import dynamic from "next/dynamic";
 
-// const NavBlock = dynamic(() => import("./navigation/navBlock"), {
-//   loading: () => <p>Loading...</p>,
-// });
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

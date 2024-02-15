@@ -3,6 +3,7 @@
 .wrapper {
   background-color: $white;
   margin: 0 auto;
+  border: 1px solid $dark-olive-green;
 }
 
 .inner-wrapper {
@@ -25,6 +26,10 @@
     color: $gray;
     margin-left: 57px;
     font-size: 20px;
+
+    &:hover {
+      color: $light-blue;
+    }
   }
 
   @media screen and (max-width: 1150px) {

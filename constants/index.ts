@@ -67,23 +67,28 @@ export const menu: IMenu[] = [
 
 export const socialIcons: SocialIcon[] = [
   {
-    href: "/assets/instagram.svg",
+    link: "https://www.instagram.com/ratepunk/",
+    srcToImg: "/assets/instagram.svg",
     id: v4(),
   },
   {
-    href: "/assets/facebook.svg",
+    link: "https://www.facebook.com/r8punk/",
+    srcToImg: "/assets/facebook.svg",
     id: v4(),
   },
   {
-    href: "/assets/linkedin.svg",
+    link: "https://www.linkedin.com/company/ratepunk/?originalSubdomain=lt",
+    srcToImg: "/assets/linkedin.svg",
     id: v4(),
   },
   {
-    href: "/assets/twitter.svg",
+    link: "https://twitter.com/rate_punk",
+    srcToImg: "/assets/twitter.svg",
     id: v4(),
   },
   {
-    href: "/assets/tiktok.svg",
+    link: "https://www.tiktok.com/@ryanthetravelguy?lang=en",
+    srcToImg: "/assets/tiktok.svg",
     id: v4(),
   },
 ];

@@ -67,7 +67,7 @@ const Footer = () => {
           >
             <div>
               <h3 className={styles.title}>CONTACT</h3>
-              <div>
+              <div className={styles["email-link"]}>
                 <Image
                   src={emeil}
                   alt={"email"}
@@ -75,16 +75,26 @@ const Footer = () => {
                   height={16}
                   style={{ marginRight: 16 }}
                 />
-                hi@ratepunk.com
+                <Link href={"mailto:hi@ratepunk.com"}>hi@ratepunk.com</Link>
               </div>
             </div>
             <div className={styles.text}>
               <h3 className={styles.title}>SOCIAL</h3>
               <div className={styles["social-btns"]}>
                 {socialIcons.map((el: SocialIcon) => (
-                  <div className={styles["social-btn"]} key={el.id}>
-                    <Image src={el.href} width={16} height={16} alt={"icon"} />
-                  </div>
+                  <Link
+                    className={styles["social-btn"]}
+                    key={el.id}
+                    href={el.link}
+                    target="_blank"
+                  >
+                    <Image
+                      src={el.srcToImg}
+                      width={16}
+                      height={16}
+                      alt={"icon"}
+                    />
+                  </Link>
                 ))}
               </div>
             </div>

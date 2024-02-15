@@ -41,6 +41,7 @@
   height: 144px;
   padding-bottom: 10px;
   box-sizing: border-box;
+  border: 1px solid $dark-olive-green;
 
   @media screen and (max-width: 1150px) {
     height: 286px;
@@ -59,6 +60,7 @@
   font-family: "Noto Sans";
   font-size: 16px;
   width: 100%;
+  border: 1px solid $dark-olive-green;
 
   @media screen and (max-width: 1150px) {
     height: 867px;
@@ -107,6 +109,10 @@
 
     a {
       color: $dark-olive-green;
+
+      &:hover {
+        color: $light-blue;
+      }
     }
   }
 
@@ -129,6 +135,10 @@
   justify-content: center;
   align-items: center;
   margin-right: 8px;
+
+  &:hover {
+    background-color: $light-yellow;
+  }
 }
 
 .copyright-string {
@@ -140,5 +150,15 @@
 
   @media screen and (max-width: 1150px) {
     bottom: 48px;
+  }
+}
+
+.email-link {
+  a {
+    color: $dark-olive-green;
+
+    &:hover {
+      color: $light-blue;
+    }
   }
 }
