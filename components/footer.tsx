@@ -89,7 +89,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* <div>© 2021 Ratepunk. All Rights Reserved.</div> */}
+          <div className={styles["copyright-string"]}>
+            © 2021 Ratepunk. All Rights Reserved.
+          </div>
         </div>
       </section>
     </footer>
