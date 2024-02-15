@@ -1,6 +1,7 @@
 import Image from "next/image";
 import classNames from "classnames";
 import styles from "./form.module.scss";
+import success from "../../public/assets/success.svg";
 import { useState } from "react";
 
 const successMessage = { status: "Your email is confirmed!", img: "/assets" };
@@ -23,7 +24,7 @@ const ReferralLink = ({ reflink }: { reflink: string }) => {
       >
         <div className={styles.success}>
           <Image
-            src={"/assets/success.svg"}
+            src={success}
             alt={successMessage.status}
             width={32}
             height={32}

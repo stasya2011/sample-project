@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import ReferralLink from "./referralLink";
 import styles from "./form.module.scss";
+import email from "../../public/assets/email.svg";
 
 const errorMessage = { status: "Error State", img: "" };
 
@@ -38,7 +39,7 @@ const Form = ({ submite }: any) => {
               <Image
                 className={styles["email-img"]}
                 alt="email"
-                src={"/assets/email.svg"}
+                src={email}
                 width={20}
                 height={16}
               />

@@ -5,7 +5,7 @@ import styles from "./button.module.scss";
 
 const Button = ({ link, resource, srcToImg }: IFooterBtn) => {
   return (
-    <Link href={link} className={styles.wrapper}>
+    <Link href={link} className={styles.wrapper} target="_blank">
       <Image src={srcToImg} width={48} height={48} alt={resource} />
       <span className={styles.info}>
         <span>available in the</span>

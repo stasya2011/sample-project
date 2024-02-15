@@ -26,13 +26,13 @@ export const data: IStep[] = [
 
 export const dataFooterBtns: IFooterBtn[] = [
   {
-    link: "/",
+    link: "https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk",
     resource: "chrome web store",
     srcToImg: "/assets/chrome.svg",
     id: v4(),
   },
   {
-    link: "/",
+    link: "https://apps.apple.com/us/app/ratepunk-hotel-and-travel/id1607823726",
     resource: "apple app store",
     srcToImg: "/assets/apple.svg",
     id: v4(),

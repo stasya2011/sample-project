@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Form from "@/components/form/form";
 import ListOfSteps from "@/components/listOfSteps/listOfSteps";
 import styles from "./chromeExtension.module.scss";
@@ -23,8 +24,10 @@ const ChromeExtension = () => {
 
   return (
     <section className={styles.wrapper}>
-      <Form submite={submite} />
-      <ListOfSteps />
+      <Suspense fallback={<h3>Loading....</h3>}>
+        <Form submite={submite} />
+        <ListOfSteps />
+      </Suspense>
     </section>
   );
 };

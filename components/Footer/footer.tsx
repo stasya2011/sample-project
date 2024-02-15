@@ -6,6 +6,7 @@ import Logo from "../header/logo";
 import Link from "next/link";
 import Image from "next/image";
 import classNames from "classnames";
+import emeil from "../../public/assets/email-footer.svg";
 import styles from "./footer.module.scss";
 
 const Footer = () => {
@@ -68,11 +69,11 @@ const Footer = () => {
               <h3 className={styles.title}>CONTACT</h3>
               <div>
                 <Image
-                  src={"/assets/email-footer.svg"}
+                  src={emeil}
                   alt={"email"}
-                  width={0}
-                  height={0}
-                  style={{ marginRight: 16, width: 16, height: "auto" }}
+                  width={16}
+                  height={16}
+                  style={{ marginRight: 16 }}
                 />
                 hi@ratepunk.com
               </div>
