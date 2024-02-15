@@ -1,6 +1,6 @@
 import { dataFooterBtns, quickLinks, socialIcons } from "@/constants";
 import { IFooterBtn, IMenu, SocialIcon } from "@/types";
-import Button from "./button/button";
+import Button from "./button";
 import RateComponent from "./rateComponent/rateComponent";
 import Logo from "./logo";
 import Link from "next/link";
