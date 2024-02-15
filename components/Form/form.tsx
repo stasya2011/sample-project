@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+
+import { useRef, useState } from "react";
 import Image from "next/image";
 import ReferralLink from "./referralLink";
 import styles from "./form.module.scss";
@@ -7,15 +8,35 @@ import email from "../../public/assets/email.svg";
 
 const errorMessage = { status: "Error State", img: "" };
 
-const Form = ({ submite }: any) => {
+const Form = ({
+  getEmail,
+  submitNewEmail,
+}: {
+  getEmail: () => Promise<{ email: string } | undefined>;
+  submitNewEmail: (str: string) => Promise<any>;
+}) => {
+  const inputRef = useRef<HTMLInputElement>(null);
   const [isError, setIsError] = useState(false);
   const [isEmailConfirmed, setIsEmailConfirmed] = useState(false);
-  const handleGetLink = async () => {
-    const res = await submite();
-    if (res && res.email) {
-      setIsEmailConfirmed(true);
+
+  const manageSendingLinks = async () => {
+    if (inputRef.current && inputRef.current.value) {
+      try {
+        await submitNewEmail(inputRef.current.value);
+
+        const res = await getEmail();
+        if (res && res.email) {
+          setIsEmailConfirmed(true);
+        } else {
+          setIsEmailConfirmed(false);
+          setIsError(true);
+        }
+      } catch (err) {
+        console.error("+++// Error //+++", err);
+        setIsError(true);
+      }
     } else {
-      setIsError(false);
+      setIsError(true);
     }
   };
 
@@ -32,7 +53,10 @@ const Form = ({ submite }: any) => {
           {isEmailConfirmed ? (
             <ReferralLink reflink={"https://ratepunk.com/referral"} />
           ) : (
-            <form className={styles["form-wrapper"]} action={handleGetLink}>
+            <form
+              className={styles["form-wrapper"]}
+              action={manageSendingLinks}
+            >
               {isError && (
                 <h4 className={styles.error}>{errorMessage.status}</h4>
               )}
@@ -43,8 +67,14 @@ const Form = ({ submite }: any) => {
                 width={20}
                 height={16}
               />
-              <input type="email" placeholder="Enter your email address" />
-              <button className={styles.btn}>Get Referral Link</button>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                ref={inputRef}
+              />
+              <button type="submit" className={styles.btn}>
+                Get Referral Link
+              </button>
             </form>
           )}
         </div>
