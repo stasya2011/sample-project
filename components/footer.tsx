@@ -1,12 +1,12 @@
 import { dataFooterBtns, quickLinks, socialIcons } from "@/constants";
 import { IFooterBtn, IMenu, SocialIcon } from "@/types";
-import Button from "../button/button";
+import Button from "./button/button";
 import RateComponent from "./rateComponent/rateComponent";
-import Logo from "../header/logo";
+import Logo from "./logo";
 import Link from "next/link";
 import Image from "next/image";
 import classNames from "classnames";
-import emeil from "../../public/assets/email-footer.svg";
+import emeil from "../public/assets/email-footer.svg";
 import styles from "./footer.module.scss";
 
 const Footer = () => {

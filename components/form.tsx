@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import ReferralLink from "./referralLink";
 import styles from "./form.module.scss";
-import email from "../../public/assets/email.svg";
+import email from "../public/assets/email.svg";
 
 const errorMessage = { status: "Error State", img: "" };
 

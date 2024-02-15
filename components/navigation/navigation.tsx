@@ -4,8 +4,8 @@ import useIsSmallScreen from "@/hooks/hooks";
 import Image from "next/image";
 import styles from "../header.module.scss";
 import NavBlock from "./navBlock";
-import close from "../../../public/assets/close.svg";
-import menu from "../../../public/assets/menu.svg";
+import close from "../../public/assets/close.svg";
+import menu from "../../public/assets/menu.svg";
 
 const Navigation = ({
   handleMenu,

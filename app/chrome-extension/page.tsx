@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import Form from "@/components/form/form";
-import ListOfSteps from "@/components/listOfSteps/listOfSteps";
+import Form from "@/components/form";
+import ListOfSteps from "@/components/listOfSteps";
 import styles from "./chromeExtension.module.scss";
 
 const ChromeExtension = () => {

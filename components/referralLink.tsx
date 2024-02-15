@@ -1,7 +1,7 @@
 import Image from "next/image";
 import classNames from "classnames";
 import styles from "./form.module.scss";
-import success from "../../public/assets/success.svg";
+import success from "../public/assets/success.svg";
 import { useState } from "react";
 
 const successMessage = { status: "Your email is confirmed!", img: "/assets" };
